@@ -172,9 +172,9 @@
 
 
 // sort
-const people = ["Santosh", "Suman", "Suraj", "Saket", "Dipak", "Tony", "Stark"]
-const peoples=people.sort()
-console.log(peoples);
+// const people = ["Santosh", "Suman", "Ram", "David", "Aklesh", "Aashish", "Suraj", "Saket", "Dipak", "Tony", "Stark"]
+// const peoples = people.sort()
+// console.log(peoples);
 
 
 // slice

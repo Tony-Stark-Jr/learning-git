@@ -1,3 +1,5 @@
+// Learning C from mySirG
+
 #include <stdio.h>
 
 int main()

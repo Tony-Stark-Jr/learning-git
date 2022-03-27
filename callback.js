@@ -57,8 +57,4 @@ register(()=>
     })
 );
 
-
-
-
-
 console.log("Other applicaation work!");

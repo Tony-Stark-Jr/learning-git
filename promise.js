@@ -11,8 +11,9 @@
 function register() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            console.log("Register end");
-            resolve();
+            // console.log("Register end");
+            // resolve();
+            reject("Error while register!!!")
         }, 1000)
     });
 }
@@ -68,9 +69,35 @@ function displayUserData() {
 // );
 
 
-register()
-    .then(sendEmail)
-    .then(login)
-    .then(getUserData)
-    .then(displayUserData)
+// register()
+//     .then(sendEmail)
+//     .then(login)
+//     .then(getUserData)
+//     .then(displayUserData)
+//     .catch((err) => {
+//         console.log("Error", err);
+//     })
 
+
+// #. Async & Awaits
+async function auth() {
+    try {
+        const regis = await register();
+        await sendEmail();
+        await login();
+        await getUserData();
+        await displayUserData();
+        console.log(regis);
+    }
+    catch (err) {
+        console.log(err);
+    }
+
+}
+
+auth().then(() => {
+    console.log("All Sets");
+})
+// .catch((err) => {
+//     console.log(err);
+// })

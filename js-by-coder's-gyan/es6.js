@@ -149,3 +149,96 @@
 // }
 
 // In Object
+// const user={
+//     name:'Santosh Marar',
+//     age:17,
+//     profession:'Engineer'
+// }
+
+// for(const [key,value] of Object.entries(user)){
+//     console.log(key,value);
+// }
+
+// #. Promise
+
+// function login() {
+//     return new Promise((resolve, reject) => {
+//         setInterval(() => {
+//             console.log("login..");
+//             reject("There is a problem");
+//         }, 0)
+//     })
+// }
+
+// login().then(()=>{
+//     console.log("Redirecting");
+// }).catch((data)=>{
+// console.log(data);
+// })
+
+// #. find method (Array method)
+// const users = [{ name: "Stark" },{name: "Suman"}]
+
+// const user = users.find((user) => {
+//     return user.name === "Stark";
+// })
+
+// console.log(user);
+
+// #. findIndex
+// const users = [{ name: "Suman" }, { name: "Stark" }]
+
+// const user = users.findIndex((user) => {
+//     return user.name === "Suman";
+// })
+
+// console.log(user);
+
+// Set
+// const uniqueNumbers = new Set();
+// uniqueNumbers.add(5),
+// uniqueNumbers.add(4),
+// uniqueNumbers.add(4),
+// uniqueNumbers.add(7)
+
+// console.log(uniqueNumbers.has(5));
+
+// const array = [1, 2, 3, 4, 5, 6, 1, 10, 4, 3];
+// const uniqueNumbers = new Set(array);
+// console.log(Array.from(uniqueNumbers));
+
+
+// map(hashtables)
+// const urls = new Map();
+// urls.set("development", "exe.com")
+// urls.set("production", "exes.com")
+// console.log(urls);
+
+// for ([key, value] of urls) {
+//     console.log(key, value);
+// }
+
+
+// #.Classes
+// class Person {
+
+//     constructor(name) {
+//         this.name = name;
+//     }
+
+//     greet() {
+//         console.log("Good Morning");
+//     }
+// }
+
+// class GreatPerson extends Person {
+//     attitude = "cool"
+
+//     greet(name) {
+//         console.log(`${name} Good Evening`);
+//     }
+// }
+
+// const jhon = new GreatPerson('Jhon Doe')
+// console.log(jhon);
+
